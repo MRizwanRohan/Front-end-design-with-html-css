@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('bg1.jpg');
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navdiv {
+    background-color: rgba(65, 135, 216, 0.3);
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+
+.logo a{
+    background: linear-gradient(to right, #0b65ec, #e74c3c);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navdiv ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+li a{
+    color: white;
+    padding: 12px;
+}
+
+li a:hover{
+    background-color: #427cd352;
+    font-size: 18px;
+    border-radius: 4px;
+    color: black;
+}
+
+.srch {
+    display: flex;
+    align-items: center;
+}
+
+input[type="search"] {
+    padding: 6px;
+    border: 1px solid rgba(119, 0, 255, 0.637);
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px rgb(30, 117, 167); */
+    font-size: 13px;
+    flex: 1;
+}
+
+button.btn {
+    font-size: 12px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid rgba(119, 0, 255, 0.637);
+    border-radius: 5px;
+    padding: 6.7px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: rgba(195, 216, 216, 0.096);
+    color: black;
+}
+
+
+.container {
+    color: #131212;
+    font-family: sans-serif;
+    background-color: rgba(65, 135, 216, 0.329);
+    border-radius: 10px;
+    width: auto;
+    margin: 135px 23px;
+    padding: 20px 23px 45px 20px;
+    float: right;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    top: 28px;
+}
+
+.container h2 {
+    font-family: serif;
+    background: linear-gradient(to right, #f8fafd, #e74c3c);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 10px;
+}
+
+.container a {
+    color: rgb(252, 251, 251);
+}
+.container td {
+    padding-bottom: 10px; 
+}
+
+button.lbtn {
+    font-size: 12px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid rgba(158, 137, 137, 0.637);
+    border-radius: 5px;
+    padding: 6px 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.lbtn:hover {
+    background-color: rgba(195, 216, 216, 0.096);
+    color: rgb(15, 15, 15);
+}
+
+.text h2{
+    margin-top: 5px 5px 5px 0;
+    padding-top: 25px 10px 0 10px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.text span{
+    margin-top: 5px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.text {
+    margin: 215px 85px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    position: relative;
+    top: 40px;
+    padding-left: 65px;
+}
+
+
+.footer {
+    color: #dfdadaae;
+    background-color: #5a88cc4d;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.footerlogo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navdiv {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .logo {
+        padding: 0 0; 
+    }
+
+    .navdiv ul {
+        margin-top: 20px; 
+    }
+
+    .srch {
+        margin-top: 20px; 
+        justify-content: center; 
+    }
+
+    .container {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 7px;
+    }
+
+    .container h2 {
+        font-size: 23px; 
+        padding-bottom: 5px; 
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 0;
+    }
+
+    .navdiv ul {
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 10px; 
+    }
+
+    .container {
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 7px;
+    }
+
+    .text h2 {
+        font-size: 20px; 
+    }
+}
